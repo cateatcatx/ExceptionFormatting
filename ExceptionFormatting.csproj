@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>9</LangVersion>
+    <RootNamespace>Decoherence.ExceptionFormatting</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DefineConstants>TRACE;HIDE_DECOHERENCE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DefineConstants>TRACE;HIDE_DECOHERENCE</DefineConstants>
+  </PropertyGroup>
+
+</Project>
